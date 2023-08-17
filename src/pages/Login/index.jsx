@@ -24,13 +24,17 @@ const schema = yup.object().shape({
   });
 const Login = ({ authenticate }) => {
     const navigate = useNavigate();
-    const [user, setUser]=useState({
-		name:"",
-		email:"",
-		password:"",
+    // const [user, setUser]=useState({
+	// 	name:"",
+	// 	email:"",
+	// 	password:"",
 
-	})
-    setUser(user);
+	// })
+    // setUser(user);
+    const user={
+        name:"",
+        email:"",
+        password:"",}
     
     // validation
     const { control, formState, handleSubmit } =
