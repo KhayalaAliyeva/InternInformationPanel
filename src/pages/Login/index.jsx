@@ -24,13 +24,6 @@ const schema = yup.object().shape({
   });
 const Login = ({ authenticate }) => {
     const navigate = useNavigate();
-    // const [user, setUser]=useState({
-	// 	name:"",
-	// 	email:"",
-	// 	password:"",
-
-	// })
-    // setUser(user);
     const user={
         name:"",
         email:"",
@@ -67,7 +60,7 @@ const Login = ({ authenticate }) => {
                     <input type="text" placeholder="Name" />
                     <input type="email" placeholder="Email" />
                     <input type="password" placeholder="Password" />
-                    <button >Sign Up</button>
+                    <button  type="submit">Sign Up</button>
                 </form>
             </div>
             <div className="form-container sign-in-container">
