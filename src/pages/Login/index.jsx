@@ -31,13 +31,13 @@ const Login = ({ authenticate }) => {
 
 	})
     // validation
-    const { control, formState, handleSubmit, watch, register, setValue } =
+    const { control, formState, handleSubmit } =
     useForm({
       mode: "onChange",
 	  user,
       resolver: yupResolver(schema),
     });
-	const { isValid, dirtyFields, errors, setError } = formState;
+	const { isValid, dirtyFields, errors } = formState;
     // display sign-in or sign up
     const[ display, setDisplay]=useState("");
     const clickSignUpDisplay=()=>{
