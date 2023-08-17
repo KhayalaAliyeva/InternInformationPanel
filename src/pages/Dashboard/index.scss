@@ -1,0 +1,30 @@
+.dashboard_main{
+    padding:20px 40px;
+    .page_name{
+        margin-bottom:30px;
+        font-size: 30px;
+        color:#3E4095;
+    }
+    .graph-section{
+        margin-top: 30px;
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .pie-chart{
+            width: 40%;
+            margin:auto;
+        }
+        .bar-graph{
+            width: 50%;
+            canvas{
+                height: 200px !important;
+                width: 500px !important;
+            }
+        }
+    }
+    .name-graph{
+        color:#3E4095;
+        font-size: 20px;
+    }
+}
