@@ -30,6 +30,8 @@ const Login = ({ authenticate }) => {
 		password:"",
 
 	})
+    setUser(user);
+    
     // validation
     const { control, formState, handleSubmit } =
     useForm({
